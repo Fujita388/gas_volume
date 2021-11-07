@@ -4,7 +4,6 @@
 *.dat
 volume.py
 *.input
-cps
 a.out
 test.sh.*
 cps.log
