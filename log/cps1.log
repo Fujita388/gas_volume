@@ -1,0 +1,15 @@
+Number of tasks : 7
+Number of processes : 8
+Total execution time: 4777.16 [s]
+Elapsed time: 1156.79 [s]
+Parallel Efficiency : 0.589954
+
+Task list:
+Command : Elapsed time
+./num_thread_1 : 617.128 [s]
+./num_thread_2 : 1156.79 [s]
+./num_thread_4 : 821.944 [s]
+./num_thread_6 : 608.15 [s]
+./num_thread_8 : 543.25 [s]
+./num_thread_12 : 504.852 [s]
+./num_thread_24 : 525.052 [s]
