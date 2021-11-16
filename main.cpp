@@ -24,7 +24,7 @@ void gas_volume(double d, double thresh) {
 	int i_dump = 0;  // dumpfileの各行の通し番号
 	int i_step = 0;  // step内でのインデックス 
 	string str_dump;
-	double pos_data[N][3];  // 1stepあたりの粒子の座標データの配列→vectorへ
+	double pos_data[N][3];  // 1stepあたりの粒子の座標データの配列
 
 	while (getline(ifile, str_dump)) {  // ifileを1行ずつstr_dumpに読み込む
 		if (i_dump == 3) {
@@ -43,7 +43,7 @@ void gas_volume(double d, double thresh) {
 			pos_data[i_step-1][2] = stod(split(str_dump, ' ')[4]) * L;
 
 			/////座標データから密度計算/////
-			if (i_step == num_atoms) {  // 1step終わったらセルごとに密度計算し、気泡体積割合を算出
+			if (i_step == num_atoms) {
 				vector<double> density(Lx * Ly * Lz, 0);  // 密度データの配列
 				int gas = 0;  // 閾値以下のセルを気泡としてカウント
 				for (int i = 0; i < num_atoms; i++) {
