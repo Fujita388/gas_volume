@@ -2,10 +2,6 @@
 *.atoms
 *.lammpstrj
 *.dat
-volume.py
 *.input
 a.out
-test.sh.*
-cps.log
-test.cpp
-log
+gas_volume.sh.*

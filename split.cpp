@@ -23,4 +23,3 @@ vector<string> split(const string &s, char delim) {
 	}
 	return elems;
 }
-

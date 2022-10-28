@@ -12,7 +12,7 @@ using namespace std;
 
 // 気相体積を測定する関数
 void gas_volume(double d, double thresh) {
-	ifstream ifile("rescale01.lammpstrj");  // 読み込むファイルのパスを指定
+	ifstream ifile("rescale.lammpstrj");  // 読み込むファイルのパスを指定
 	ofstream ofile("test.dat");  // 書き出すファイルのパスを指定
 
 	const int N = 4000;
