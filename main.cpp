@@ -13,9 +13,9 @@ using namespace std;
 // 気相体積を測定する関数
 void gas_volume(double d, double thresh) {
 	ifstream ifile("rescale.lammpstrj");  // 読み込むファイルのパスを指定
-	ofstream ofile("test.dat");  // 書き出すファイルのパスを指定
+	ofstream ofile("gas_volume.dat");  // 書き出すファイルのパスを指定
 
-	const int N = 4000;
+	const int N = 1000000;
 	int num_atoms;  // 粒子数
 	double L;  // ボックスサイズ
 	double V = pow(d, 3.0);  // セルの体積
@@ -71,6 +71,5 @@ void gas_volume(double d, double thresh) {
 
 int main() {
 	gas_volume(1.4875, 0.1);
-//	gas_volume(1.7, 0.1);
 	return 0;
 }

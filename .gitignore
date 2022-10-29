@@ -4,4 +4,4 @@
 *.dat
 *.input
 a.out
-gas_volume.sh.*
+gas_volume.*

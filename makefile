@@ -9,4 +9,4 @@ o:
 	$(CXX) $(CPPFLAGS) $(OFILE)
 
 clean:
-	$(RM) *.o a.out *.dat gas_volume.sh.*
+	$(RM) *.o a.out *.log gas_volume.*
