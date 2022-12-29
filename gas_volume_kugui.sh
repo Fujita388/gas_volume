@@ -1,9 +1,9 @@
 #!/bin/sh
 
-#PBS -q i2cpu
-#PBS -l select=2:ncpus=128:mpiprocs=128:ompthreads=1
-#PBS -l walltime=00:30:00
-#PBS -N gas_volume
+#PBS -q F16cpu
+#PBS -l select=16:ncpus=128:mpiprocs=128:ompthreads=1
+#PBS -l walltime=01:00:00
+#PBS -N g_v_with_surf01
 
 module load intel intel-mpi
-mpiexec -n 128 ./a.out > gas_volume.log 2>&1
+mpiexec -n 2048 ./a.out > gas_volume.log 2>&1
